@@ -52,7 +52,19 @@ body {
   alt: "AI";
   white-space: break-spaces;
   will-change: content;
-  animation: typed-0 4.44s linear 1s infinite forwards;
+  animation: typed-0 4.44s linear 1s 2 forwards, typed-0-final 0.1s linear 9.88s 1 forwards;
+}
+@keyframes typed-0-final {
+  0%, 50% {
+    content: "​A";
+    content: "​A"/"AI";
+    alt: "AI";
+  }
+  50.001%, 100% {
+    content: "​AI";
+    content: "​AI"/"AI";
+    alt: "AI";
+  }
 }
 .ai::after {
   content: "​";

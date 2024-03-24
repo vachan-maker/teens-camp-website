@@ -43,7 +43,7 @@ body {
 	@include typed(
 		"AI", "Altar's Inmate",
 		2,
-		(caret-width: 2px, caret-space: 2px)
+		(caret-width: 2px, caret-space: 2px, iterations: 2)
 	);
 }
 main {
