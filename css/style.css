@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(https://fonts.bunny.net/css?family=bitter:400,800|rubik:400);
 .montserrat {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -7,8 +8,7 @@
 }
 
 body {
-  height: 100%;
-  width: 100%;
+  height: 100vh;
   margin: 0;
   padding: 0;
   font-size: 1.15rem;
@@ -52,7 +52,7 @@ body {
   alt: "AI";
   white-space: break-spaces;
   will-change: content;
-  animation: typed-0 4.44s linear 1s 2 forwards, typed-0-final 0.1s linear 9.88s 1 forwards;
+  animation: typed-0 4.44s linear 1s 1 forwards, typed-0-final 0.1s linear 5.44s 1 forwards;
 }
 @keyframes typed-0-final {
   0%, 50% {
@@ -244,8 +244,18 @@ body {
 }
 
 main {
-  background-color: #f0f0f0; /* Example background color */
-  text-align: center;
+  font-family: "Bitter";
+  font-weight: 400;
+  background-color: #f7f7f7; /* Example background color */
+  color: #37352f;
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+article {
+  font-family: "Rubik";
+  font-size: 1.5rem;
 }
 
 .button {
@@ -286,34 +296,9 @@ button_group {
   gap: 0.5rem;
 }
 
-h1 {
-  font-size: 3rem;
-}
-
-h2 {
-  font-size: 2.6rem;
-  margin-top: 3rem;
-}
-
-h3 {
-  font-size: 2rem;
-  margin-top: 3rem;
-}
-
-h4 {
-  font-size: 1.44rem;
-}
-
-h5 {
-  font-size: 1.15rem;
-}
-
-h6 {
-  font-size: 0.96rem;
-}
-
 p {
   margin: 1.5rem 0;
+  font-size: 1.5rem;
 }
 
 /* Prevent long strings from overflowing container */
