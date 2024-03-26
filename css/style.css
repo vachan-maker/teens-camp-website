@@ -23,9 +23,6 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url("/images/fire.webp");
-  background-size: cover;
-  background-position: center;
   flex-direction: column;
 }
 
