@@ -35,14 +35,13 @@ body {
   font-family: "Montserrat";
   color: #212121;
   font-weight: bold;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .time {
   color: #ffb300;
-}
-
-.timer {
-  padding: 10px;
 }
 
 .thumbnail {
