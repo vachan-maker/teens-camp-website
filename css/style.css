@@ -33,12 +33,12 @@ body {
 #countdown p {
   font-size: 2rem;
   font-family: "Montserrat";
-  color: #5b4349;
+  color: #212121;
   font-weight: bold;
 }
 
 .time {
-  color: #32251f;
+  color: #ffb300;
 }
 
 .thumbnail {
