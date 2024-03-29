@@ -1,12 +1,5 @@
 @import 'typed';
-.montserrat {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
-}
 @import url(https://fonts.bunny.net/css?family=bitter:400,800|rubik:400);
-
 body {
     height: 100vh;
     margin: 0;
@@ -34,6 +27,25 @@ body {
     word-wrap: break-word;
     margin-bottom: 3rem;
 }
+#countdown p{
+  font-size: 2rem;
+  font-family: 'Montserrat';
+  color: #5b4349;
+  font-weight: bold;
+}
+.time {
+  color: #32251f;
+}
+.thumbnail {
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+}
+.thumbnail img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 .ai {
 	padding: 0 0 0 3px;
 	&::before { font-weight: 600; }
@@ -46,7 +58,6 @@ body {
 main {
   font-family: 'Bitter';
   font-weight: 400;
-  background-color: #f7f7f7; /* Example background color */
   color:#37352f;
   max-width: 50rem;
   margin: 0 auto;
