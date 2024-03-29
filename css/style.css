@@ -41,6 +41,10 @@ body {
   color: #ffb300;
 }
 
+.timer {
+  padding: 10px;
+}
+
 .thumbnail {
   width: 300px;
   height: 400px;
