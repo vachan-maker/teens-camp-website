@@ -51,19 +51,19 @@ body {
   width: 100%;
   height: auto;
   display: block;
-  scroll-snap-align: start;
 }
 .poster_box {
   display: flex;
   flex-direction: row;
   overflow-y: scroll;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: x mandatory;
 }
 .poster {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 50px;
+  scroll-snap-align: start;
 }
 .ai {
 	padding: 0 0 0 3px;
