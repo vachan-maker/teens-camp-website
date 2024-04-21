@@ -51,13 +51,13 @@
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
           
         // Output the result in an element with id="demo"
-        document.getElementById("demo").innerHTML = '<span class = "time">' + days + '</span>'+ " Days " + '<span class = "time">'+ hours + '</span>' + " Hours "
+        document.getElementById("demo").innerHTML = '<span class = "time">'+ hours + '</span>' + " Hours "
         + '<span class = "time">' + minutes + '</span>'+ " Minutes " + '<span class = "time">'+ seconds + '</span class = "time">'+ " Seconds ";
           
         // If the count down is over, write some text 
         if (distance < 0) {
           clearInterval(x);
-          document.getElementById("demo").innerHTML = "EXPIRED";
+          document.getElementById("demo").innerHTML = "Countdown Complete!";
         }
       }, 1000);
       </script>
@@ -72,13 +72,16 @@
     <main id = "learn-more">
         <h2>Be an Altar's Inmate</h2>
         <h3>Teens' Camp</h3>
-        <p><em>Get ready for an enthusiastic holiday hub for teens, with fun filled games, sessions, practical lessons and more!! REGISTER NOWWW</em></p>
+        <div class = "verse">
+        <p><strong>Colossians 3:1 (NIV)</strong></p>
+        <p> Since, then, you have been raised with Christ, set your hearts on things above, where Christ is, seated at the right hand of God.</p>
+        </div>
         <div class="container_new">
           <div class="container_new_block">
           <p><strong>Date:</strong><time datetime="2024-04-22 09:00">April 22 9:00am</time> - <time datetime="2024-04-24 16:00">April 24 4:00pm</time></p>
           </div>
           <div class="container_new">
-          <p><strong>Venue:</strong> Charalkunnu Camp Centre</p>
+          <p><strong>Venue: </strong>Christian Education Centre, Charalkunnu</p>
           </div>
           <div class="container_new">
           <p><strong>Registration Fees:</strong> ₹1500</p>
