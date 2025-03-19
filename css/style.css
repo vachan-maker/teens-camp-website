@@ -1,0 +1,431 @@
+@charset "UTF-8";
+@import url(https://fonts.bunny.net/css?family=bitter:400,800|montserrat:800|rubik:400);
+@font-face {
+  font-family: 'Morganite-BoldItalic';
+  src: url('/fonts/Morganite-BoldItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+body {
+  height: 100vh;
+  background-color: #eaeaea;
+  margin: 0;
+  padding: 0;
+  font-size: 1.15rem;
+  line-height: 1.5;
+  font-family: "Rubik", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  border-bottom: 5px solid #2e8b58;
+  border-bottom-style: dashed
+}
+#first {
+  color: #3bb371;
+  text-shadow: 5px 10px 0px #a2d3b8;
+}
+#second {
+  color: #2e8b58;
+  padding-left: 4rem;
+  text-shadow: 5px 10px 0px #9ec3af;
+}
+#third {
+  color: #3bb371;
+  text-shadow: -10px 10px 0px #a2d3b8;
+}
+.hero_title {
+  font-family: "Morganite-BoldItalic", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 10rem;
+  word-wrap: break-word;
+  margin-bottom: 3rem;
+  transform: rotate(-5deg);
+  line-height: 1;
+}
+
+#countdown p {
+  font-size: 2rem;
+  font-family: "Montserrat";
+  color: #212121;
+  font-weight: bold;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  opacity: 0.9;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.time {
+  color: #764406;
+}
+
+.thumbnail {
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.poster_box {
+  display: flex;
+  flex-direction: row;
+  overflow-y: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.poster {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+  scroll-snap-align: start;
+}
+
+.ai {
+  padding: 0 0 0 3px;
+}
+.ai::before {
+  font-weight: 600;
+}
+.ai::before {
+  content: "​";
+  content: "​"/"AI";
+  alt: "AI";
+  white-space: break-spaces;
+  will-change: content;
+  animation: typed-0 4.44s linear 1s 1 forwards, typed-0-final 0.1s linear 5.44s 1 forwards;
+}
+@keyframes typed-0-final {
+  0%, 50% {
+    content: "​A";
+    content: "​A"/"AI";
+    alt: "AI";
+  }
+  50.001%, 100% {
+    content: "​AI";
+    content: "​AI"/"AI";
+    alt: "AI";
+  }
+}
+.ai::after {
+  content: "​";
+  position: relative;
+  display: inline-block;
+  padding-right: 2px;
+  border-right: 2px solid currentColor;
+  white-space: nowrap;
+  animation: typed-0-caret 0.75s linear 1s infinite forwards;
+}
+@keyframes typed-0 {
+  0%, 1.1251261261% {
+    content: "​A";
+    content: "​A"/"AI";
+    alt: "AI";
+  }
+  1.1261261261%, 25.6746756757% {
+    content: "​AI";
+    content: "​AI"/"AI";
+    alt: "AI";
+  }
+  25.6756756757%, 26.5755765766% {
+    content: "​A";
+    content: "​A"/"AI";
+    alt: "AI";
+  }
+  26.5765765766%, 37.8368378378% {
+    content: "​";
+    content: "​"/"AI";
+    alt: "AI";
+  }
+  37.8378378378%, 38.962963964% {
+    content: "​A";
+    content: "​A"/"AI";
+    alt: "AI";
+  }
+  38.963963964%, 40.0890900901% {
+    content: "​Al";
+    content: "​Al"/"AI";
+    alt: "AI";
+  }
+  40.0900900901%, 41.2152162162% {
+    content: "​Alt";
+    content: "​Alt"/"AI";
+    alt: "AI";
+  }
+  41.2162162162%, 42.3413423423% {
+    content: "​Alta";
+    content: "​Alta"/"AI";
+    alt: "AI";
+  }
+  42.3423423423%, 43.4674684685% {
+    content: "​Altar";
+    content: "​Altar"/"AI";
+    alt: "AI";
+  }
+  43.4684684685%, 44.5935945946% {
+    content: "​Altar'";
+    content: "​Altar'"/"AI";
+    alt: "AI";
+  }
+  44.5945945946%, 45.7197207207% {
+    content: "​Altar's";
+    content: "​Altar's"/"AI";
+    alt: "AI";
+  }
+  45.7207207207%, 46.8458468468% {
+    content: "​Altar's ";
+    content: "​Altar's "/"AI";
+    alt: "AI";
+  }
+  46.8468468468%, 47.971972973% {
+    content: "​Altar's I";
+    content: "​Altar's I"/"AI";
+    alt: "AI";
+  }
+  47.972972973%, 49.0980990991% {
+    content: "​Altar's In";
+    content: "​Altar's In"/"AI";
+    alt: "AI";
+  }
+  49.0990990991%, 50.2242252252% {
+    content: "​Altar's Inm";
+    content: "​Altar's Inm"/"AI";
+    alt: "AI";
+  }
+  50.2252252252%, 51.3503513514% {
+    content: "​Altar's Inma";
+    content: "​Altar's Inma"/"AI";
+    alt: "AI";
+  }
+  51.3513513514%, 52.4764774775% {
+    content: "​Altar's Inmat";
+    content: "​Altar's Inmat"/"AI";
+    alt: "AI";
+  }
+  52.4774774775%, 77.026027027% {
+    content: "​Altar's Inmate";
+    content: "​Altar's Inmate"/"AI";
+    alt: "AI";
+  }
+  77.027027027%, 77.9269279279% {
+    content: "​Altar's Inmat";
+    content: "​Altar's Inmat"/"AI";
+    alt: "AI";
+  }
+  77.9279279279%, 78.8278288288% {
+    content: "​Altar's Inma";
+    content: "​Altar's Inma"/"AI";
+    alt: "AI";
+  }
+  78.8288288288%, 79.7287297297% {
+    content: "​Altar's Inm";
+    content: "​Altar's Inm"/"AI";
+    alt: "AI";
+  }
+  79.7297297297%, 80.6296306306% {
+    content: "​Altar's In";
+    content: "​Altar's In"/"AI";
+    alt: "AI";
+  }
+  80.6306306306%, 81.5305315315% {
+    content: "​Altar's I";
+    content: "​Altar's I"/"AI";
+    alt: "AI";
+  }
+  81.5315315315%, 82.4314324324% {
+    content: "​Altar's ";
+    content: "​Altar's "/"AI";
+    alt: "AI";
+  }
+  82.4324324324%, 83.3323333333% {
+    content: "​Altar's";
+    content: "​Altar's"/"AI";
+    alt: "AI";
+  }
+  83.3333333333%, 84.2332342342% {
+    content: "​Altar'";
+    content: "​Altar'"/"AI";
+    alt: "AI";
+  }
+  84.2342342342%, 85.1341351351% {
+    content: "​Altar";
+    content: "​Altar"/"AI";
+    alt: "AI";
+  }
+  85.1351351351%, 86.035036036% {
+    content: "​Alta";
+    content: "​Alta"/"AI";
+    alt: "AI";
+  }
+  86.036036036%, 86.9359369369% {
+    content: "​Alt";
+    content: "​Alt"/"AI";
+    alt: "AI";
+  }
+  86.9369369369%, 87.8368378378% {
+    content: "​Al";
+    content: "​Al"/"AI";
+    alt: "AI";
+  }
+  87.8378378378%, 88.7377387387% {
+    content: "​A";
+    content: "​A"/"AI";
+    alt: "AI";
+  }
+  88.7387387387%, 100% {
+    content: "​";
+    content: "​"/"AI";
+    alt: "AI";
+  }
+}
+@keyframes typed-0-caret {
+  75% {
+    border-color: transparent;
+  }
+}
+
+main {
+  font-family: "Bitter";
+  font-weight: 400;
+  color: #37352f;
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+article {
+  font-family: "Rubik";
+  font-size: 1.5rem;
+}
+
+.button {
+  background-color: #3bb371; /* Green */
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-top: 10px;
+  font-family: inherit;
+}
+
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button_grey {
+  background-color: #e7e7e7; /* Green */
+  border: none;
+  color: #000000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.button_grey:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+button_group {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+p {
+  margin: 1.5rem 0;
+  font-size: 1.5rem;
+}
+
+.verse {
+  border: 1px solid;
+  box-shadow: 3.3px 6.6px 6.6px hsla(0, 0%, 0%, 0.4);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Prevent long strings from overflowing container */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* Fix line height when title wraps */
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+}
+
+/* Reduce header size on mobile */
+@media only screen and (max-width: 720px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2.1rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+}
+
+.box-title {
+  font-family: "Rubik";
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+iframe {
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+}
+footer p {
+  font-size: small;
+}
+
+/*# sourceMappingURL=style.css.map */
