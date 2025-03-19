@@ -33,7 +33,6 @@ body {
 }
 #second {
   color: #2e8b58;
-  padding-left: 4rem;
   text-shadow: 5px 10px 0px #9ec3af;
 }
 #third {
@@ -48,6 +47,7 @@ body {
   margin-bottom: 3rem;
   transform: rotate(-5deg);
   line-height: 1;
+  letter-spacing: 0.05em;
 }
 
 #countdown p {
