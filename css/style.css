@@ -1,10 +1,9 @@
 @charset "UTF-8";
 @import url(https://fonts.bunny.net/css?family=bitter:400,800|montserrat:800|rubik:400);
 @font-face {
-  font-family: 'Morganite-BoldItalic';
-  src: url('/fonts/Morganite-BoldItalic.ttf') format('truetype');
+  font-family: 'Gagalin-Regular';
+  src: url('/fonts/Gagalin-Regular.otf') format('opentype');
   font-weight: normal;
-  font-style: italic;
 }
 body {
   background-color: #eaeaea;
@@ -28,27 +27,39 @@ body {
   border-bottom-style: dashed;
 }
 #first {
-  color: #3bb371;
-  text-shadow: 5px 10px 0px #a2d3b8;
+  color: #fff;
+  text-shadow: 5px 10px 0px #000;
 }
 #second {
-  color: #2e8b58;
-  text-shadow: 5px 10px 0px #9ec3af;
+  color: #fff;
+  text-shadow: 5px 10px 0px #000;
 }
 #third {
-  color: #3bb371;
-  text-shadow: -10px 10px 0px #a2d3b8;
+  color: #fff;
+  text-shadow: -10px 10px 0px #000;
 }
 .hero_title {
-  font-family: "Morganite-BoldItalic", sans-serif;
+  font-family: "Gagalin-Regular", sans-serif;
   font-optical-sizing: auto;
-  font-size: 11rem;
+  font-size: 8rem;
   word-wrap: break-word;
   margin-bottom: 1.5rem;
   margin-top: -0.5rem;
   transform: rotate(-5deg);
   line-height: 1;
   letter-spacing: 0.05em;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 16px; /* Spacing between rectangles */
+  padding: 16px;
+}
+
+.rectangle {
+  background: blue;
+  width: 100%;
+  height: 150px; /* Fixed height */
 }
 
 #countdown p {
