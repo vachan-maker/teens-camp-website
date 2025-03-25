@@ -6,7 +6,9 @@
   font-weight: normal;
 }
 body {
-  background-color: #eaeaea;
+  background-color: #00171c;
+  color: white;
+  width: 100%;
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -26,6 +28,7 @@ body {
   border-bottom: 5px solid #2e8b58;
   border-bottom-style: dashed;
 }
+
 #first {
   color: #fff;
   text-shadow: 5px 10px 0px #000;
@@ -48,6 +51,11 @@ body {
   transform: rotate(-5deg);
   line-height: 1;
   letter-spacing: 0.05em;
+}
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+  .hero_title {
+      font-size: 5rem;
+  }
 }
 .grid-container {
   display: grid;
@@ -312,7 +320,7 @@ body {
 main {
   font-family: "Bitter";
   font-weight: 400;
-  color: #37352f;
+  color: #eaeaea;
   max-width: 50rem;
   margin: 0 auto;
   padding: 2rem;
@@ -324,7 +332,7 @@ article {
 }
 
 .button {
-  background-color: #3bb371; /* Green */
+  background-color: #c27118; /* Green */
   border: none;
   color: white;
   text-transform: uppercase;
@@ -332,8 +340,7 @@ article {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  border-radius: 4px;
+  font-size: 1rem;
   margin-top: 10px;
   font-family: inherit;
 }
@@ -350,8 +357,7 @@ article {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  border-radius: 4px;
+  font-size: 1rem;
 }
 
 .button_grey:hover {
