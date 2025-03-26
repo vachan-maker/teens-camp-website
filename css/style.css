@@ -44,6 +44,13 @@ body {
   z-index: -1;
   height: 75%;
 }
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+  .grid-container {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 15px;
+  }
+  
+}
 
 .item {
   background: #3498db;
@@ -76,6 +83,20 @@ body {
   grid-column: span 1;
   grid-row: span 4;
   background-color: #c27118;
+}
+@media (max-width: 480px) { /* For mobile devices */
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: auto;
+    gap: 10px; /* Minimal gap */
+    max-width: 90%;
+    height: 50%;
+    padding-top: unset;
+    padding-bottom: unset;
+  }
+  /* .item:first-child {
+    grid-row: span 3;
+  } */
 }
 #first {
   color: #fff;
