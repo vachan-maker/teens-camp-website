@@ -8,6 +8,10 @@
 html {
   scroll-behavior: smooth;
 }
+img {
+  max-width: 80%;
+  height: auto;
+}
 body {
   background-color: #212121;
   color: white;
@@ -116,7 +120,9 @@ body {
   }
 }
 
-
+.gallery {
+  margin: 0 auto;
+}
 
 
 #countdown p {
@@ -163,208 +169,6 @@ body {
   scroll-snap-align: start;
 }
 
-.ai {
-  padding: 0 0 0 3px;
-}
-.ai::before {
-  font-weight: 600;
-}
-.ai::before {
-  content: "​";
-  content: "​"/"AI";
-  alt: "AI";
-  white-space: break-spaces;
-  will-change: content;
-  animation: typed-0 4.44s linear 1s 1 forwards, typed-0-final 0.1s linear 5.44s 1 forwards;
-}
-@keyframes typed-0-final {
-  0%, 50% {
-    content: "​A";
-    content: "​A"/"AI";
-    alt: "AI";
-  }
-  50.001%, 100% {
-    content: "​AI";
-    content: "​AI"/"AI";
-    alt: "AI";
-  }
-}
-.ai::after {
-  content: "​";
-  position: relative;
-  display: inline-block;
-  padding-right: 2px;
-  border-right: 2px solid currentColor;
-  white-space: nowrap;
-  animation: typed-0-caret 0.75s linear 1s infinite forwards;
-}
-@keyframes typed-0 {
-  0%, 1.1251261261% {
-    content: "​A";
-    content: "​A"/"AI";
-    alt: "AI";
-  }
-  1.1261261261%, 25.6746756757% {
-    content: "​AI";
-    content: "​AI"/"AI";
-    alt: "AI";
-  }
-  25.6756756757%, 26.5755765766% {
-    content: "​A";
-    content: "​A"/"AI";
-    alt: "AI";
-  }
-  26.5765765766%, 37.8368378378% {
-    content: "​";
-    content: "​"/"AI";
-    alt: "AI";
-  }
-  37.8378378378%, 38.962963964% {
-    content: "​A";
-    content: "​A"/"AI";
-    alt: "AI";
-  }
-  38.963963964%, 40.0890900901% {
-    content: "​Al";
-    content: "​Al"/"AI";
-    alt: "AI";
-  }
-  40.0900900901%, 41.2152162162% {
-    content: "​Alt";
-    content: "​Alt"/"AI";
-    alt: "AI";
-  }
-  41.2162162162%, 42.3413423423% {
-    content: "​Alta";
-    content: "​Alta"/"AI";
-    alt: "AI";
-  }
-  42.3423423423%, 43.4674684685% {
-    content: "​Altar";
-    content: "​Altar"/"AI";
-    alt: "AI";
-  }
-  43.4684684685%, 44.5935945946% {
-    content: "​Altar'";
-    content: "​Altar'"/"AI";
-    alt: "AI";
-  }
-  44.5945945946%, 45.7197207207% {
-    content: "​Altar's";
-    content: "​Altar's"/"AI";
-    alt: "AI";
-  }
-  45.7207207207%, 46.8458468468% {
-    content: "​Altar's ";
-    content: "​Altar's "/"AI";
-    alt: "AI";
-  }
-  46.8468468468%, 47.971972973% {
-    content: "​Altar's I";
-    content: "​Altar's I"/"AI";
-    alt: "AI";
-  }
-  47.972972973%, 49.0980990991% {
-    content: "​Altar's In";
-    content: "​Altar's In"/"AI";
-    alt: "AI";
-  }
-  49.0990990991%, 50.2242252252% {
-    content: "​Altar's Inm";
-    content: "​Altar's Inm"/"AI";
-    alt: "AI";
-  }
-  50.2252252252%, 51.3503513514% {
-    content: "​Altar's Inma";
-    content: "​Altar's Inma"/"AI";
-    alt: "AI";
-  }
-  51.3513513514%, 52.4764774775% {
-    content: "​Altar's Inmat";
-    content: "​Altar's Inmat"/"AI";
-    alt: "AI";
-  }
-  52.4774774775%, 77.026027027% {
-    content: "​Altar's Inmate";
-    content: "​Altar's Inmate"/"AI";
-    alt: "AI";
-  }
-  77.027027027%, 77.9269279279% {
-    content: "​Altar's Inmat";
-    content: "​Altar's Inmat"/"AI";
-    alt: "AI";
-  }
-  77.9279279279%, 78.8278288288% {
-    content: "​Altar's Inma";
-    content: "​Altar's Inma"/"AI";
-    alt: "AI";
-  }
-  78.8288288288%, 79.7287297297% {
-    content: "​Altar's Inm";
-    content: "​Altar's Inm"/"AI";
-    alt: "AI";
-  }
-  79.7297297297%, 80.6296306306% {
-    content: "​Altar's In";
-    content: "​Altar's In"/"AI";
-    alt: "AI";
-  }
-  80.6306306306%, 81.5305315315% {
-    content: "​Altar's I";
-    content: "​Altar's I"/"AI";
-    alt: "AI";
-  }
-  81.5315315315%, 82.4314324324% {
-    content: "​Altar's ";
-    content: "​Altar's "/"AI";
-    alt: "AI";
-  }
-  82.4324324324%, 83.3323333333% {
-    content: "​Altar's";
-    content: "​Altar's"/"AI";
-    alt: "AI";
-  }
-  83.3333333333%, 84.2332342342% {
-    content: "​Altar'";
-    content: "​Altar'"/"AI";
-    alt: "AI";
-  }
-  84.2342342342%, 85.1341351351% {
-    content: "​Altar";
-    content: "​Altar"/"AI";
-    alt: "AI";
-  }
-  85.1351351351%, 86.035036036% {
-    content: "​Alta";
-    content: "​Alta"/"AI";
-    alt: "AI";
-  }
-  86.036036036%, 86.9359369369% {
-    content: "​Alt";
-    content: "​Alt"/"AI";
-    alt: "AI";
-  }
-  86.9369369369%, 87.8368378378% {
-    content: "​Al";
-    content: "​Al"/"AI";
-    alt: "AI";
-  }
-  87.8378378378%, 88.7377387387% {
-    content: "​A";
-    content: "​A"/"AI";
-    alt: "AI";
-  }
-  88.7387387387%, 100% {
-    content: "​";
-    content: "​"/"AI";
-    alt: "AI";
-  }
-}
-@keyframes typed-0-caret {
-  75% {
-    border-color: transparent;
-  }
-}
 
 main {
   font-family: "Bitter";
@@ -428,7 +232,7 @@ p {
   border: 1px solid;
   box-shadow: 3.3px 6.6px 6.6px hsla(0, 0%, 0%, 0.4);
   border-radius: 5px;
-  padding: 10px;
+  padding: 20px 15px;
 }
 
 /* Prevent long strings from overflowing container */
@@ -464,12 +268,13 @@ h3 {
   justify-content: space-evenly;
 }
 
+
 .box {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
+  border: 1px solid white;
   border-radius: 5px;
   padding: 0.5em 1em;
 }
