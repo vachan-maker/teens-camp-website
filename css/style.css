@@ -5,6 +5,9 @@
   src: url('/fonts/Gagalin-Regular.otf') format('opentype');
   font-weight: normal;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #212121;
   color: white;
@@ -53,12 +56,7 @@ body {
 }
 
 .item {
-  background: #3498db;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
+  background: #2f7e9c;
   padding: 10px;
 }
 .item:first-child {
@@ -86,30 +84,20 @@ body {
 }
 @media (max-width: 480px) { /* For mobile devices */
   .grid-container {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    grid-auto-rows: minmax(55px, auto);
     gap: 10px; /* Minimal gap */
-    max-width: 90%;
-    height: 50%;
+    max-width: 90vw;
+    height: 60%;
     padding-top: unset;
     padding-bottom: unset;
+    margin: auto;
   }
-  /* .item:first-child {
-    grid-row: span 3;
+  /* .item:nth-child(5) {
+    display: none;
   } */
 }
-#first {
-  color: #fff;
-  text-shadow: 5px 10px 0px #000;
-}
-#second {
-  color: #fff;
-  text-shadow: 5px 10px 0px #000;
-}
-#third {
-  color: #fff;
-  text-shadow: -10px 10px 0px #000;
-}
+
 .hero_title {
   font-family: "Gagalin-Regular", sans-serif;
   font-optical-sizing: auto;
@@ -117,9 +105,10 @@ body {
   word-wrap: break-word;
   margin-bottom: 1.5rem;
   margin-top: -0.5rem;
-  transform: rotate(-5deg);
+  transform: rotate(-2deg);
   line-height: 1;
   letter-spacing: 0.05em;
+  text-shadow: 5px 10px 0px #000;
 }
 @media (max-width: 768px) { /* Adjust breakpoint as needed */
   .hero_title {
@@ -128,11 +117,7 @@ body {
 }
 
 
-.rectangle {
-  background: blue;
-  width: 100%;
-  height: 150px; /* Fixed height */
-}
+
 
 #countdown p {
   font-size: 2rem;
