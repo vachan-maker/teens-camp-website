@@ -27,6 +27,22 @@
         <meta property="og:description" content="Welcome to the website of the Teens Camp! Main theme of teens camp is Let's get Linked-In 2 Jesus"/>
   </head>
   <body>
+    <style>
+      /* Hide the WhatsApp button by default */
+      .whatsapp-link {
+          display: none;
+      }
+
+      /* Show the WhatsApp button only on mobile devices */
+      @media (max-width: 767px) {
+          .whatsapp-link {
+              display: inline-block; /* or block */
+          }
+          .desktop {
+            display: none;
+          }
+      }
+  </style>
 	<section class="hero">
     <!-- <div class="grid-container">
       <div class="item animate__animated animate__slideInDown"></div>
@@ -76,13 +92,17 @@
         <h1 class="hero_title animate__animated animate__heartBeat">Let's get <br/>Linked in <br/>2 Jesus</h1>
         <div class="button_group">
         <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLScLFrpCex3GTW8oEUXaG9wisCMHN20yu8Bq5zcjUzlGja3l_Q/viewform">Register</a>
-        <a class = "button_grey" href="#learn-more" target="_self">Learn More</a>
+        <a class = "button grey" href="#learn-more" target="_self">Learn More</a>
         </div>
     </section>
     <main id = "learn-more">
       <div class="block" data- data-aos="fade-down">
         <h2>Let's get Linked-In 2 Jesus'</h2>
         <h3>Teens' Camp 2K25</h3>
+        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Teen%27s+Camp+2025+-+Let%27s+Get+Linked+to+Jesus&dates=20250506T033000Z/20250508T123000Z&details=UESI+South+Central+Region%2C+Pathanamthitta+District+invites+you+to+Teen%27s+Camp+2025.+Songs%2C+Games%2C+Movie+Night+and+much+more!+Register+here%3A+https%3A%2F%2Fteens-camp.pages.dev%2F&location=Christian+Education+Center%2C+Charalkunnu&sf=true&output=xml"
+        target="_blank" class="button">
+       Add to Google Calendar
+     </a>
         <div class = "verse">
         <p><strong>John 15:5 (NIV)</strong></p>
         <p>“I am the vine; you are the branches. If you remain in me and I in you, you will bear much fruit; apart from me you can do nothing.</p>
@@ -91,6 +111,7 @@
         <div class="container_new">
           <div class="container_new_block">
           <p><strong>Date:</strong><time datetime="2025-05-06 09:00">May 06 9:00am</time> - <time datetime="2025-05-08 16:00">May 8 4:00pm</time></p>
+          
           </div>
           <div class="container_new">
           <p><strong>Venue: </strong>Christian Education Centre, Charalkunnu</p>
@@ -110,11 +131,20 @@
             <p class="box-title">Movie Night</p>
           </div>
         </div>
-        <h2>Posters</h2>
+        <h2>Poster</h2>
         <div class="poster_box">
         <div class="poster">
           <img class = "thumbnail" fetchpriority="low" src = "images/poster.png" alt="The flyer of the camp. Be An AI Camp will be held from April 22-24. Registraton fee is Rs. 1500. There will be campfire, movie night and candle night. This is the main information in the poster."/>
           <a href="images/poster.webp" class="button" download>Download</a>
+          <a href="https://wa.me/?text=Hey%20Guys%2C%0A%0AUESI%20SOUTH%20CENTRAL%20REGION%2C%20PATHANAMTHITTA%20DISTRICT%20invites%20you%20to%20Teen%27s%20Camp%202025%2C%20Let%27s%20get%20LINKED-IN%202%20Jesus%20on%20May%206th%209%20am%20to%20May%208th%204%20pm.%0A%0A%F0%9F%93%8C%20Location%20%3A%20Christian%20Education%20Center%2C%20Charalkunnu%0A%0A%F0%9F%94%B8%20Songs%20%F0%9F%8E%B6%0A%F0%9F%94%B8%20Games%20%F0%9F%8E%AF%0A%F0%9F%94%B8%20Movie%20Night%20%F0%9F%8D%BF%0A%F0%9F%94%B8%20And%20many%20more...%0A%0ATo%20register%20click%20here%20%3A%20https%3A%2F%2Fteens-camp.pages.dev%2F%0AOR%0AScan%20the%20QR%20given%20in%20brochure%0A%0AN.B%3A%20Finance%20should%20not%20be%20a%20hindrance%20to%20attend%20the%20camp%0A%0AThank%20You" class="button green desktop" target="_blank">
+
+            Share on WhatsApp
+          </a>
+          <a href="whatsapp://send?text=Hey%20Guys%2C%0A%0AUESI%20SOUTH%20CENTRAL%20REGION%2C%20PATHANAMTHITTA%20DISTRICT%20invites%20you%20to%20Teen%27s%20Camp%202025%2C%20Let%27s%20get%20LINKED-IN%202%20Jesus%20on%20May%206th%209%20am%20to%20May%208th%204%20pm.%0A%0A%F0%9F%93%8C%20Location%20%3A%20Christian%20Education%20Center%2C%20Charalkunnu%0A%0A%F0%9F%94%B8%20Songs%20%F0%9F%8E%B6%0A%F0%9F%94%B8%20Games%20%F0%9F%8E%AF%0A%F0%9F%94%B8%20Movie%20Night%20%F0%9F%8D%BF%0A%F0%9F%94%B8%20And%20many%20more...%0A%0ATo%20register%20click%20here%20%3A%20https%3A%2F%2Fteens-camp.pages.dev%2F%0AOR%0AScan%20the%20QR%20given%20in%20brochure%0A%0AN.B%3A%20Finance%20should%20not%20be%20a%20hindrance%20to%20attend%20the%20camp%0A%0AThank%20You" 
+          class="whatsapp-link button green" target="_blank">
+           Share on WhatsApp
+       </a>
+                   
         </div>
         </div>
         <h2>Glimpses of Last Year's Camp</h2>
@@ -136,8 +166,6 @@
       <p><a href="2K24/index.html">Teens Camp 2K24</a></p>
       <p><a href = "https://github.com/microsoft/fluentui-emoji">Icons Credits</a> | <a href="https://github.com/vachan-maker/teens-camp-website">Source Code</a></p>
       <p></p>
-      <p><a href="https://unsplash.com/photos/silhouette-photo-of-six-persons-on-top-of-mountain-Sj0iMtq_Z4w">Background Image</a></p>
-      <p><a href="https://www.w3schools.com/howto/howto_js_countdown.asp">Countdown Timer</a></p>
     </footer>
 
   </body>
