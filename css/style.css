@@ -197,7 +197,7 @@ article {
 .button {
   background-color: #cd9222;
   border: none;
-  color: white;
+  color: whitesmoke;
   text-transform: uppercase;
   padding: 18px 36px;
   text-align: center;
@@ -228,7 +228,9 @@ article {
 .grey:hover {
   background-color: #d4d4d4;
 }
-
+.grey a{
+  color:black !important;
+}
 
 
 button_group {
@@ -323,3 +325,10 @@ footer a {
 }
 
 /*# sourceMappingURL=style.css.map */
+a {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
